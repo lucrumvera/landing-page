@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding-block: 20px 40px;
+    padding-inline: 40px;
+    background-color: #E1D4C9;
+    color: #403F3D
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1360px;
+    margin-inline: auto;
+    height: 60px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav a {
+    color: #403F3D;
+    text-decoration: none;
+}
+
+.nav a {
+    color: #403F3D;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.hero {
+    background-image: url("./assets/images/img-hero.jpg");
+    height: 644px;
+    max-width: 1360px;
+    width: 100%;
+    margin-inline: auto;
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+    padding: 100px;
+}
+
+.hero h1 {
+    width: 530px;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    font-size: 72px;
+    font-weight: 600;
+    line-height: 105%;
+    color: #E1D4C9;
+}
+
+.hero-title span {
+    font-style: italic;
+}
+
+.hero-text {
+    width: 530px;
+    margin: 0;
+    color: #E1D4C9;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 530px;
+}
+
+.hero-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 64px;
+    border-radius: 100px;
+
+    background-color: #E1D4C9;
+    color: #403F3D;
+    text-decoration: none;
+
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.favorite-title {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 125%;
+    text-align: center;
+    color: #403F3D;
+}
+
+.favorite-title span {
+    font-style: italic;
+    color: #B0907A;
+}
+
+.slide-image {
+    width: 480px;
+    height: 480px;
+    object-fit: contain;
+}
+
+.slider {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide {
+    width: 480px;
+    text-align: center;
+}
+
+.slider-button {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #665F55;
+    border-radius: 50%;
+    background: transparent;
+}
