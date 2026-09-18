@@ -48,6 +48,14 @@
             <span>Menu</span>
             <img src="./assets/images/menu.svg" alt="">
         </a>
+
+        <!-- -------------------- Burger menu -------------------- -->
+
+        <button class="burger-button" type="button" aria-label="Open menu">
+            <span></span>
+            <span></span>
+        </button>
+
     </header>
     <!------------------------------- 4. Hero -------------------------------->
 
@@ -73,33 +81,145 @@
 
         <!------------------------------- 5. Favorite coffee -------------------------------->
 
-        <section class="favorite" id="favorite"></section>
-        <h2 class="favorite-title">
-            Choose your <span>favorite</span> coffee
-        </h2>
+        <section class="favorite" id="favorite">
+            <h2 class="favorite-title">
+                Choose your <span>favorite</span> coffee
+            </h2>
+
+
+            <div class="slider">
+                <button class="slider-button slider-button-prev" type="button">
+                    ←
+                </button>
+                <div class="slide">
+                    <img class="slide-image" src="./assets/images/coffee-1.png" alt="S'mores Frappuccino">
+                    <div class="slide-description">
+                        <h3 class="slide-title">S'mores Frappuccino</h3>
+                        <p class="slide-text">
+                            This new drink takes an espresso and mixes it with brown
+                            sugar and cinnamon before being topped with oat milk.
+                        </p>
+                        <div class="slide-price">$5.50</div>
+                    </div>
+
+                    <div class="slider-controls">
+                        <span class="slider-control active"></span>
+                        <span class="slider-control"></span>
+                        <span class="slider-control"></span>
+                    </div>
+
+                </div>
+
+                <button class="slider-button slider-button-next" type="button">
+                    →
+                </button>
+            </div>
         </section>
 
-        <div class="slider">
-            <button class="slider-button slider-button-prev" type="button">
-                </button>
-            <div class="slide">
-                <img class="slide-image" src="./assets/images/coffee-1.png" alt="S'mores Frappuccino">
-                <h3 class="slide-title">S'mores Frappuccino</h3>
-                <p class="slide-text">
-                    This new drink takes an espresso and mixes it with brown
-                    sugar and cinnamon before being topped with oat milk.
-                </p>
+        <!----------------------------------- 6. About ------------------------------------------>
+
+        <section class="about" id="about">
+            <h2 class="about-title">
+                Resource is <span>the perfect and cozy place</span> where you can
+                enjoy a variety of hot beverages, relax, catch up with friends,
+                or get some work done.
+            </h2>
+
+            <div class="about-images">
+                <div class="about-column">
+                    <img class="about-image about-image-big" src="./assets/images/about-1.jpg" alt="">
+                    <img class="about-image about-image-small" src="./assets/images/about-2.jpg" alt="">
+                </div>
+
+                <div class="about-column">
+                    <img class="about-image about-image-small" src="./assets/images/about-3.jpg" alt="">
+                    <img class="about-image about-image-big" src="./assets/images/about-4.jpg" alt="">
+                </div>
+
+
             </div>
-            <button class="slider-button slider-button-next" type="button">
-        </div>
+        </section>
+
+        <!----------------------------------- 7. Mobile app ------------------------------------------>
 
 
+        <section class="mobile-app" id="mobile-app">
+            <div class="mobile-app-content">
+                <h2 class="mobile-app-title">
+                    <span>Download</span> our app to start ordering
+                </h2>
 
+                <p class="mobile-app-text">
+                    Download the Resource app today and experience the comfort of ordering your favorite coffee from
+                    wherever you are
+                </p>
+
+                <div class="mobile-app-buttons">
+                    <a class="store-button" href="#">
+                        <img class="store-button-icon" src="./assets/images/apple.svg" alt="">
+                        <span class="store-button-text">
+                            <small>Available on the</small>
+                            App Store
+                        </span>
+                    </a>
+
+                    <a class="store-button" href="#">
+                        <img class="store-button-icon" src="./assets/images/google-play.svg" alt="">
+                        <span class="store-button-text">
+                            <small>Available on</small>
+                            Google Play
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="mobile-app-image">
+                <img src="./assets/images/mobile-screens.png" alt="Resource mobile application">
+            </div>
+        </section>
     </main>
 
 
-    <footer>
+    <footer class="footer" id="contact-us">
+        <div class="footer-left">
+            <h2 class="footer-title">
+                Sip, Savor, Smile.
+                <span>It’s coffee time!</span>
+            </h2>
 
+            <div class="footer-socials">
+                <div class="footer-socials">
+                    <a href="#" aria-label="Twitter">
+                        <img src="./assets/images/twitter.svg" alt="">
+                    </a>
+
+                    <a href="#" aria-label="Instagram">
+                        <img src="./assets/images/instagram.svg" alt="">
+                    </a>
+
+                    <a href="#" aria-label="Facebook">
+                        <img src="./assets/images/facebook.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-contacts">
+            <h3>Contact us</h3>
+
+            <p>
+                <img src="./assets/images/pin.svg" alt="">
+                8558 Green Rd., LA
+            </p>
+            <p>
+                <img src="./assets/images/phone.svg" alt="">
+                +1 (603) 555-0123
+            </p>
+            <p>
+                <img src="./assets/images/clock.svg" alt="">
+                Mon-Sat: 9:00 AM – 23:00 PM
+            </p>
+        </div>
     </footer>
 </body>
 
