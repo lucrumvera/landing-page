@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Coffee House</title>
     <link rel="stylesheet" href="./style.css">
 
     <link rel="icon" href="./assets/images/Logo.svg" type="image/svg+xml">
@@ -16,26 +16,31 @@
 </head>
 
 <body>
+     <!---------------------------- 1. Logo ------------------------------->
+
     <header class="header">
-        <!---------------------------- 1. Logo ------------------------------->
+       
+        <a href="index.html" class="logo-link">
+            <img class="logo logo-light" src="./assets/images/Logo.svg" alt="Resource Coffee House">
 
-        <a href="index.html">
-            <img src="./assets/images/Logo.svg" alt="Resource Coffee House">
+            <img class="logo logo-dark" src="./assets/images/Logo-dark.svg" alt="Resource Coffee House">
         </a>
-
 
 
         <!---------------------------- 2. Navigation ------------------------------->
 
         <nav class="nav">
-            <a href="#favorite">Favorite coffee</a>
-            <a href="#about">About</a>
-            <a href="#mobile-app">Mobile app</a>
-            <a href="#contacts">Contact us</a>
+            <ul class="nav-list">
+                <li><a href="#favorite">Favorite coffee</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#mobile-app">Mobile app</a></li>
+                <li><a href="#contact-us">Contact us</a></li>
+            </ul>
         </nav>
 
         <!---------------------------- 3. Theme + Menu ------------------------------->
 
+        <div class="header-actions">
         <div class="theme-switcher">
             <button class="theme-button" type="button">
                 <img src="./assets/images/sun.svg" alt="Light theme">
@@ -50,6 +55,7 @@
             <span>Menu</span>
             <img src="./assets/images/menu.svg" alt="">
         </a>
+        </div>
 
         <!-- -------------------- Burger menu -------------------- -->
 
@@ -89,19 +95,45 @@
             </h2>
 
 
-            <div class="slider">
+            <div class="slider active">
                 <button class="slider-button slider-button-prev" type="button">
                     ←
                 </button>
-                <div class="slide">
-                    <img class="slide-image" src="./assets/images/coffee-1.png" alt="S'mores Frappuccino">
-                    <div class="slide-description">
-                        <h3 class="slide-title">S'mores Frappuccino</h3>
-                        <p class="slide-text">
-                            This new drink takes an espresso and mixes it with brown
-                            sugar and cinnamon before being topped with oat milk.
-                        </p>
-                        <div class="slide-price">$5.50</div>
+                <div class="slides">
+                    <div class="slide active">
+                        <img class="slide-image" src="./assets/images/coffee-1.png" alt="S'mores Frappuccino">
+                        <div class="slide-description">
+                            <h3 class="slide-title">S'mores Frappuccino</h3>
+                            <p class="slide-text">
+                                This new drink takes an espresso and mixes it with brown
+                                sugar and cinnamon before being topped with oat milk.
+                            </p>
+                            <div class="slide-price">$5.50</div>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img class="slide-image" src="./assets/images/coffee-2.png" alt="Caramel Macchiato">
+                        <div class="slide-description">
+                            <h3 class="slide-title">Caramel Macchiato</h3>
+                            <p class="slide-text">
+                                Fragrant and unique classic espresso with rich caramel-peanut
+                                syrup, with cream under whipped thick foam.
+                            </p>
+                            <div class="slide-price">$5.00</div>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img class="slide-image" src="./assets/images/Ice coffe.png" alt="Ice coffee">
+                        <div class="slide-description">
+                            <h3 class="slide-title">Ice coffee</h3>
+                            <p class="slide-text">
+                                A popular summer drink that tones and invigorates.
+                                Prepared from coffee, milk and ice.
+                            </p>
+                            <div class="slide-price">$4.50</div>
+                        </div>
                     </div>
 
                     <div class="slider-controls">
@@ -129,13 +161,17 @@
 
             <div class="about-images">
                 <div class="about-column">
-                    <img class="about-image about-image-big" src="./assets/images/about-1.jpg" alt="">
-                    <img class="about-image about-image-small" src="./assets/images/about-2.jpg" alt="">
+                    <img class="about-image about-image-big" src="./assets/images/about-1.jpg"
+                        alt="Woman enjoying coffee at the cafe">
+                    <img class="about-image about-image-small" src="./assets/images/about-2.jpg"
+                        alt="Coffee cup on a cafe table">
                 </div>
 
                 <div class="about-column">
-                    <img class="about-image about-image-small" src="./assets/images/about-3.jpg" alt="">
-                    <img class="about-image about-image-big" src="./assets/images/about-4.jpg" alt="">
+                    <img class="about-image about-image-small" src="./assets/images/about-3.jpg"
+                        alt="Man drinking coffee while working">
+                    <img class="about-image about-image-big" src="./assets/images/about-4.jpg"
+                        alt="Coffee shop interior">
                 </div>
 
 
@@ -157,7 +193,7 @@
                 </p>
 
                 <div class="mobile-app-buttons">
-                    <a class="store-button" href="#">
+                    <a class="store-button" href="https://www.apple.com/app-store/">
                         <img class="store-button-icon" src="./assets/images/apple.svg" alt="">
                         <span class="store-button-text">
                             <small>Available on the</small>
@@ -165,7 +201,7 @@
                         </span>
                     </a>
 
-                    <a class="store-button" href="#">
+                    <a class="store-button" href="https://play.google.com/store">
                         <img class="store-button-icon" src="./assets/images/google-play.svg" alt="">
                         <span class="store-button-text">
                             <small>Available on</small>
@@ -181,7 +217,7 @@
         </section>
     </main>
 
-     <!----------------------------------------- 3. Footer ---------------------------------------------->
+    <!----------------------------------------- 3. Footer ---------------------------------------------->
 
 
     <footer class="footer" id="contact-us">

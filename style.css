@@ -15,19 +15,83 @@ body {
 }
 
 .header {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
     align-items: center;
-    justify-content: space-between;
+
     width: 100%;
     max-width: 1360px;
-    margin-inline: auto;
     height: 60px;
+    margin-inline: auto;
 }
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    justify-self: end;
+    gap: 24px;
+}
+
 
 .nav {
     display: flex;
     align-items: center;
+    justify-content: center;
+    justify-self: center;
     gap: 40px;
+}
+
+.nav-list {
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.theme-switcher {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    width: 88px;
+    height: 44px;
+    padding: 4px;
+
+    border: 1px solid #C1B6AD;
+    border-radius: 100px;
+
+    margin-right: 20px;
+}
+
+.theme-button {
+    width: 36px;
+    height: 36px;
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.theme-button:first-child img {
+    width: 22px;
+    height: 22px;
+}
+
+.theme-button:last-child img {
+    width: 18px;
+    height: 18px;
+}
+
+.theme-button img {
+    width: 20px;
+    height: 20px;
 }
 
 .nav a {
@@ -44,8 +108,24 @@ body {
     line-height: 150%;
 }
 
+.menu-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    color: #403F3D;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+
+
 .hero {
     background-image: url("./assets/images/img-hero.jpg");
+    margin: 20px;
     height: 644px;
     max-width: 1360px;
     width: 100%;
@@ -67,6 +147,7 @@ body {
 }
 
 .hero-title span {
+    color: #B0907A;
     font-style: italic;
 }
 
@@ -149,6 +230,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.slide:not(.active) {
+    display: none;
 }
 
 .slider-button {
@@ -481,6 +566,34 @@ body {
         display: none;
     }
 
+    .nav.active {
+        display: flex;
+        position: fixed;
+        inset: 0;
+        z-index: 20;
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+
+        background-color: #e1d4c9;
+    }
+
+
+
+    .nav.active a {
+        font-size: 32px;
+        line-height: 125%;
+    }
+
+    .burger-button.active {
+        position: fixed;
+        top: 20px;
+        right: 40px;
+        z-index: 30;
+    }
+
     .menu-link {
         display: none;
     }
@@ -657,7 +770,8 @@ body {
         width: 100%;
     }
 }
-    /* -------------------- 10. Menu page -------------------- */
+
+/* -------------------- 10. Menu page -------------------- */
 
 .menu-page {
     max-width: 1360px;
@@ -807,6 +921,14 @@ body {
     cursor: pointer;
 }
 
+@media (min-width: 481px) and (max-width: 768px) {
+    .favorite-title {
+        font-size: 42px;
+        line-height: 115%;
+    }
+}
+
+
 @media (max-width: 768px) {
     .menu-more-button {
         display: block;
@@ -818,6 +940,18 @@ body {
 body.dark-theme {
     background-color: #403f3d;
     color: #e1d4c9;
+}
+
+.logo-dark {
+    display: none;
+}
+
+body.dark-theme .logo-light {
+    display: none;
+}
+
+body.dark-theme .logo-dark {
+    display: block;
 }
 
 body.dark-theme .nav a,
@@ -877,6 +1011,7 @@ body.dark-theme .burger-button span {
 }
 
 @media (hover: hover) {
+
     .nav a:hover,
     .menu-link:hover {
         color: #b0907a;
@@ -921,4 +1056,31 @@ body.dark-theme .burger-button span {
 
 .footer-contacts a:hover {
     color: #b0907a;
+}
+
+@media (max-width: 768px) {
+    .slide {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .slide-image {
+        width: 100%;
+        max-width: 480px;
+        height: auto;
+    }
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.theme-button.active {
+    background-color: #B0907A;
+}
+
+.theme-button.active img {
+    filter: none;
 }
